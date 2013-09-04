@@ -66,10 +66,8 @@ filetype plugin indent on     " required!
 ""
 
 ""
-"" Vim behaviour
+"" Vim general behaviour
 ""
-
-" General
 set encoding=utf-8
 set fileencoding=utf-8
 set mouse=a
@@ -189,7 +187,7 @@ nmap <silent> ,/ :nohlsearch<CR>
 
 
 ""
-" Abbreviations
+"" Abbreviations
 ""
 iabbrev rdebug    require 'ruby-debug'; Debugger.start; Debugger.settings[:autoeval] = 1; Debugger.settings[:autolist] = 1; debugger
 iabbrev rrdebug   require 'ruby-debug'; Debugger.wait_connection = true; Debugger.start_remote ; Debugger.settings[:autoeval] = 1; Debugger.settings[:autolist] = 1; debugger;
@@ -199,7 +197,6 @@ iabbrev Lipsum     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
 ""
 "" Commands
 ""
-
 " Use :w!! to save with sudo if you're editing a readonly file
 cmap w!! w !sudo tee % >/dev/null
 
@@ -208,8 +205,9 @@ command! -bar -range=% Trim :<line1>,<line2>s/\s\+$//e
 
 
 ""
-"" Plugin configuration
+"" PlUGINS
 ""
+
 
 ""
 "" NERDtree
@@ -232,7 +230,6 @@ let g:tagbar_width = 30
 " let g:tagbar_ctags_bin = '/path/to/modified-exuberant-ctags/ctags'
 
 nnoremap <silent> <F7> :TagbarToggle<CR>
-
 
 
 ""
@@ -267,10 +264,10 @@ let g:gist_detect_filetype = 1
 let g:gist_show_privates = 1
 " let g:gist_browser_command = 'x-www-browser %URL%'
 
+
 ""
 "" Tabular
 ""
-
 if exists('g:tabular_loaded')
   AddTabularPattern! symbols         / :/l0
   AddTabularPattern! hash            /^[^>]*\zs=>/
@@ -287,7 +284,6 @@ endif
 ""
 " Used by Rtags command
 " let g:Tlist_Ctags_Cmd = '/path/to/modified-exuberant-ctags/ctags'
-
 autocmd User Rails Rnavcommand factory test/factories -suffix=.rb -default=model()
 autocmd User Rails Rnavcommand mtmodels test/models -suffix=_test.rb -default=model()
 
