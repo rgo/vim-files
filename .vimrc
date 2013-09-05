@@ -46,10 +46,6 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 
-" vim-jsbeautify
-Bundle 'maksimr/vim-jsbeautify'
-Bundle 'einars/js-beautify'
-
 " Misc
 Bundle 'mileszs/ack.vim'
 Bundle 'godlygeek/tabular'
@@ -296,15 +292,3 @@ let g:rspec_command = "!spec --drb {spec}"
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
-
-
-""
-"" jsbeautify
-""
-" map <c-f> :call JsBeautify()<cr>
-" or
-autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
-" for html
-autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
-" for css or scss
-autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
