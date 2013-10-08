@@ -23,6 +23,7 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'pangloss/vim-javascript'
 Bundle 'othree/html5.vim'
 Bundle 'SyntaxComplete'
+Bundle 'petRUShka/vim-opencl'
 
 " Testing related stuff
 Bundle 'thoughtbot/vim-rspec'
@@ -50,6 +51,9 @@ Bundle 'mattn/gist-vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'LargeFile'
+
+" C
+Bundle 'Conque-GDB'
 
 " Pair programming stuff - NOTE: Commented because I'm not yet ready to go :)
 " Bundle 'benmills/vimux'
@@ -138,6 +142,7 @@ au BufRead,BufNewFile *.textile set filetype=textile
 " jQuery Syntax Highlighting
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
+au BufRead,BufNewFile   *.c,*.h,*.java set noic cin noexpandtab
 
 ""
 "" Mappings
@@ -292,3 +297,9 @@ let g:rspec_command = "!spec --drb {spec}"
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
+
+
+""
+"" ConqueGDB
+""
+let g:ConqueGdb_SrcSplit = 'above'
