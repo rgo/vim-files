@@ -107,8 +107,8 @@ set undolevels=1000
 " Searches
 set incsearch       " show search matches as you type
 set hlsearch        " highlight search terms
-set ignorecase      " case insensitive for patterns
 set smartcase       " Use case-smart searching
+set ignorecase      " case insensitive for patterns
 
 " Maintain more context around the cursor
 set scrolloff=3
