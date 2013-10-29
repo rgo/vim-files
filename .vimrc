@@ -43,6 +43,9 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 
+" Rails - i18n
+Bundle 'stefanoverna/vim-i18n'
+
 " Gist from Vim
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
@@ -289,3 +292,8 @@ map <Leader>l :call RunLastSpec()<CR>
 "" ConqueGDB
 ""
 let g:ConqueGdb_SrcSplit = 'above'
+
+""
+"" vim-i18n
+""
+vmap <Leader>z :call I18nTranslateString()<CR>
