@@ -90,6 +90,7 @@ set autoread        " Reread files when have been changed outsido of Vim
 set wmh=0           " Minium window size
 set showmatch       " When a bracket is inserted, briefly jump to the matching one.
 set showcmd         " Show command in the last line of the screen
+set laststatus=2    " Status line always
 
 "" Backups, temporary files and tags
 " don't keep backup after close
