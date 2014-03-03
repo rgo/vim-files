@@ -51,7 +51,7 @@ Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 
 " Misc
-Bundle 'mileszs/ack.vim'
+Bundle 'rking/ag.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'LargeFile'
 

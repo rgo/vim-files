@@ -6,7 +6,7 @@ Vim configuration files
 ## Dependencies
 
 * Vim :P
-* Ack (ack-grep in ubuntu and debian based systems)
+* The silver searcher
 * cURL
 * Exuberant ctags
 
