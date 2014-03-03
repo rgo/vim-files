@@ -14,10 +14,11 @@ Vim configuration files
 ## Installation
 
 1. git clone git@github.com:rgo/vim-files.git
-2. Link vim-files path as .vim at $HOME
-3. Link vim-files/.vimrc at $HOME
-4. Run vim
-5. :BundleInstall
+2. cd vim-files && git submodule init
+3. Link vim-files path as .vim at $HOME
+4. Link vim-files/.vimrc at $HOME
+5. Run vim
+6. :BundleInstall
 
 
 Note for Windows users:
