@@ -95,6 +95,7 @@ set laststatus=2    " Status line always
 
 "" Theme
 syntax on           " Syntax highlighting
+set t_Co=256
 colorscheme desert
 
 "" Backups, temporary files and tags
