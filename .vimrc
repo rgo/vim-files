@@ -57,7 +57,7 @@ Bundle 'LargeFile'
 Bundle 'bling/vim-airline'
 
 " C
-Bundle 'Conque-GDB'
+" Bundle 'Conque-GDB'
 
 " Pair programming stuff - NOTE: Commented because I'm not yet ready to go :)
 " Bundle 'benmills/vimux'
@@ -288,11 +288,12 @@ autocmd User Rails Rnavcommand mtmodels test/models -suffix=_test.rb -default=mo
 ""
 "" RSpec
 ""
-let g:rspec_command = "!spec --drb {spec}"
+let g:rspec_command = "!rspec {spec}"
 
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>c :call RunCurrentSpecFile()<CR>
+map <Leader>n :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
 
 
 ""
