@@ -92,6 +92,10 @@ set showmatch       " When a bracket is inserted, briefly jump to the matching o
 set showcmd         " Show command in the last line of the screen
 set laststatus=2    " Status line always
 
+"" Theme
+syntax on           " Syntax highlighting
+colorscheme desert
+
 "" Backups, temporary files and tags
 " don't keep backup after close
 set nobackup
