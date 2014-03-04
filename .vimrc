@@ -54,6 +54,7 @@ Bundle 'mattn/gist-vim'
 Bundle 'rking/ag.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'LargeFile'
+Bundle 'bling/vim-airline'
 
 " C
 Bundle 'Conque-GDB'
