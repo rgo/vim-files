@@ -218,7 +218,9 @@ cmap w!! w !sudo tee % >/dev/null
 " Trim file(remove blank spaces at EOL) - From hashrocket plugin
 command! -bar -range=% Trim :<line1>,<line2>s/\s\+$//e
 " Find trailing whitespace
-match ErrorMsg '\s\+$'
+" match ErrorMsg '\s\+$'
+let c_space_errors = 1
+let ruby_space_errors = 1
 
 ""
 "" PlUGINS
