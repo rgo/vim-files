@@ -293,6 +293,7 @@ autocmd User Rails Rnavcommand mtmodels test/models -suffix=_test.rb -default=mo
 "" RSpec
 ""
 let g:rspec_command = "!rspec {spec}"
+let g:rspec_runner = "os_x_iterm"
 
 map <Leader>c :call RunCurrentSpecFile()<CR>
 map <Leader>n :call RunNearestSpec()<CR>
