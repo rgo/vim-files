@@ -133,11 +133,15 @@ set wildmode=longest:full,full
 ""
 "" Default browser
 ""
+if has("unix")
+  let s:uname = system("uname")
+  if s:uname == "Darwin\n"
+    command -bar -nargs=1 OpenURL :!open <args> 2>&1 >/dev/null &
+  else
+    command -bar -nargs=1 OpenURL :!x-www-browser <args> 2>&1 >/dev/null &
+  endif
+endif
 
-" Ubuntu
-command -bar -nargs=1 OpenURL :!x-www-browser <args> 2>&1 >/dev/null &
-" Mac OS X
-" command -bar -nargs=1 OpenURL :!open <args> 2>&1 >/dev/null &
 
 
 ""
