@@ -85,8 +85,8 @@ set number          " always show line numbers
 set smarttab        " insert tabs on the start of a line according to shiftwidth, not tabstop
 set tabstop=2       " a tab is 2 spaces
 set softtabstop=2   " Spaces tat tab counts while editing
-set expandtab       " convert tab in spaces
 set shiftwidth=2    " number of space to use on autoindenting
+set expandtab       " convert tab in spaces
 set autoread        " read file again if it was changed outside of vim
 set hidden          " Let me open new files without save changes
 set backspace=indent,eol,start " Normal behaviour of backspace key
