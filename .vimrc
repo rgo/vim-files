@@ -28,6 +28,7 @@ Bundle 'othree/html5.vim'
 Bundle 'SyntaxComplete'
 Bundle 'petRUShka/vim-opencl'
 Bundle 'othree/javascript-libraries-syntax.vim'
+Bundle 'maksimr/vim-jsbeautify'
 
 " Testing related stuff
 Bundle 'thoughtbot/vim-rspec'
@@ -359,3 +360,13 @@ let g:syntastic_html_tidy_ignore_errors = [
   \ , 'discarding unexpected </alert>'
   \ ]
 let g:syntastic_mode_map = { 'mode': 'passive'}
+
+""
+"" JsBeautify
+""
+" for javascript
+autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+" for html
+autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
+" for css or scss
+autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
