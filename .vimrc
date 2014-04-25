@@ -27,6 +27,7 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'othree/html5.vim'
 Bundle 'SyntaxComplete'
 Bundle 'petRUShka/vim-opencl'
+Bundle 'othree/javascript-libraries-syntax.vim'
 
 " Testing related stuff
 Bundle 'thoughtbot/vim-rspec'
@@ -171,6 +172,12 @@ au BufRead,BufNewFile *.textile set filetype=textile
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
 au BufRead,BufNewFile   *.c,*.h,*.java set noic cin noexpandtab
+
+""
+"" javascript-libraries-syntax
+""
+let g:used_javascript_libs = 'angularjs, angularui, jquery, jasmine, requirejs'
+
 
 ""
 "" Mappings
