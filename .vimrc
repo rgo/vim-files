@@ -18,6 +18,9 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'majutsushi/tagbar'
 
+" General language plugins
+Bundle 'scrooloose/syntastic'
+
 " Specific language plugins
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'pangloss/vim-javascript'
@@ -328,3 +331,24 @@ let g:ConqueGdb_SrcSplit = 'above'
 "" vim-i18n
 ""
 vmap <Leader>z :call I18nTranslateString()<CR>
+
+""
+"" syntastic
+""
+let g:syntastic_js_checkers=['jslint']
+let g:syntastic_json_checkers=['jsonlint']
+" let g:syntastic_ruby_checkers=['mri', 'rubylint']
+let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
+" Ignore errors of proprietary attribute ng (html angular views) among others
+let g:syntastic_html_tidy_ignore_errors = [
+  \ 'trimming empty <i>'
+  \ , 'trimming empty <span>'
+  \ , 'unescaped & which should be written as &amp;'
+  \ , ' proprietary attribute "ng-'
+  \ , '<spn-'
+  \ , 'discarding unexpected </spn-'
+  \ , '<alert> is not recognized!'
+  \ , 'discarding unexpected <alert>'
+  \ , 'discarding unexpected </alert>'
+  \ ]
+let g:syntastic_mode_map = { 'mode': 'passive'}
