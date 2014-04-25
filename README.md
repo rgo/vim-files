@@ -9,6 +9,7 @@ Vim configuration files
 * The silver searcher
 * cURL
 * Exuberant ctags
+* JSHint
 
 
 ## Installation

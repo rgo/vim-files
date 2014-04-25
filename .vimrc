@@ -342,7 +342,7 @@ vmap <Leader>z :call I18nTranslateString()<CR>
 ""
 "" syntastic
 ""
-let g:syntastic_js_checkers=['jslint']
+let g:syntastic_js_checkers=['jshint']
 let g:syntastic_json_checkers=['jsonlint']
 " let g:syntastic_ruby_checkers=['mri', 'rubylint']
 let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
