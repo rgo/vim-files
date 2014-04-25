@@ -211,6 +211,11 @@ nmap Q gqap
 " Clear search highlight
 nmap <silent> ,/ :nohlsearch<CR>
 
+" Vertical split to edit my vimrc file
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+" Source my vimrc file
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
 
 ""
 "" Abbreviations
