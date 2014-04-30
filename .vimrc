@@ -312,10 +312,16 @@ let g:gist_show_privates = 1
 ""
 "" Rails
 ""
-" Used by Rtags command
-" let g:Tlist_Ctags_Cmd = '/path/to/modified-exuberant-ctags/ctags'
 autocmd User Rails Rnavcommand factory test/factories -suffix=.rb -default=model()
 autocmd User Rails Rnavcommand mtmodels test/models -suffix=_test.rb -default=model()
+let g:rails_projections = {
+      \ "app/domain/*_contract.rb": {
+      \   "command": "domain",
+      \   "test": [
+      \     "test/domain/%s_contract_test.rb",
+      \     "spec/domain/%s_contract_spec.rb"
+      \   ]
+      \ }}
 
 
 ""
@@ -345,6 +351,7 @@ vmap <Leader>z :call I18nTranslateString()<CR>
 ""
 let g:syntastic_js_checkers=['jshint']
 let g:syntastic_json_checkers=['jsonlint']
+let g:syntastic_javascript_jshint_conf='~/.jshintrc'
 " let g:syntastic_ruby_checkers=['mri', 'rubylint']
 let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
 " Ignore errors of proprietary attribute ng (html angular views) among others
@@ -359,7 +366,6 @@ let g:syntastic_html_tidy_ignore_errors = [
   \ , 'discarding unexpected <alert>'
   \ , 'discarding unexpected </alert>'
   \ ]
-let g:syntastic_mode_map = { 'mode': 'passive'}
 
 ""
 "" JsBeautify
