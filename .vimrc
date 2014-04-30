@@ -312,14 +312,24 @@ let g:gist_show_privates = 1
 ""
 "" Rails
 ""
-autocmd User Rails Rnavcommand factory test/factories -suffix=.rb -default=model()
-autocmd User Rails Rnavcommand mtmodels test/models -suffix=_test.rb -default=model()
 let g:rails_projections = {
       \ "app/domain/*_contract.rb": {
       \   "command": "domain",
       \   "test": [
       \     "test/domain/%s_contract_test.rb",
       \     "spec/domain/%s_contract_spec.rb"
+      \   ]
+      \ },
+      \ "spec/factories/*.rb": {
+      \   "command": "factory",
+      \   "related": [
+      \     "app/models/%s.rb"
+      \   ]
+      \ },
+      \ "test/factories/*.rb": {
+      \   "command": "factory",
+      \   "related": [
+      \     "app/models/%s.rb"
       \   ]
       \ }}
 
