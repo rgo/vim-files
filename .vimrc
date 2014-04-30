@@ -377,6 +377,9 @@ let g:syntastic_html_tidy_ignore_errors = [
   \ , 'discarding unexpected </alert>'
   \ ]
 
+let g:syntastic_mode_map = { 'mode': 'passive',
+      \ 'active_filetypes': ['ruby', 'javascript']
+      \ }
 ""
 "" JsBeautify
 ""
