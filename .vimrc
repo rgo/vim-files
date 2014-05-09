@@ -362,7 +362,9 @@ vmap <Leader>z :call I18nTranslateString()<CR>
 ""
 "" syntastic
 ""
+let g:syntastic_ruby_checkers=['rubocop', 'mri']
 let g:syntastic_js_checkers=['jshint']
+let g:syntastic_javascript_checkers=['jshint']
 let g:syntastic_json_checkers=['jsonlint']
 let g:syntastic_javascript_jshint_conf='~/.jshintrc'
 " let g:syntastic_ruby_checkers=['mri', 'rubylint']
