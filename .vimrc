@@ -5,7 +5,7 @@ set nocompatible               " be iMproved
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
@@ -69,6 +69,8 @@ Bundle 'bling/vim-airline'
 " Bundle 'benmills/vimux'
 " Bundle 'pgr0ss/vimux-ruby-test'
 
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
 filetype plugin indent on     " required!
 
 ""
