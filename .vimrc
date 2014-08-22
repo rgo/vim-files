@@ -337,7 +337,14 @@ let g:rails_projections = {
       \   "related": [
       \     "app/models/%s.rb"
       \   ]
-      \ }}
+      \ },
+      \ "app/decorators/*_decorator.rb": {
+      \   "command": "decorator",
+      \   "test": [
+      \     "test/domain/%s_decorator_test.rb",
+      \     "spec/domain/%s_decorator_spec.rb"
+      \   ]}
+      \ }
 
 
 ""
