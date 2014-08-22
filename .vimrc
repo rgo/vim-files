@@ -376,7 +376,7 @@ let g:syntastic_ruby_checkers=['rubocop', 'mri']
 let g:syntastic_js_checkers=['jshint']
 let g:syntastic_javascript_checkers=['jshint']
 let g:syntastic_json_checkers=['jsonlint']
-let g:syntastic_javascript_jshint_conf='~/.jshintrc'
+let g:syntastic_javascript_jshint_args='--config ~/.jshintrc'
 " let g:syntastic_ruby_checkers=['mri', 'rubylint']
 let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
 " Ignore errors of proprietary attribute ng (html angular views) among others
