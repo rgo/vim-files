@@ -350,7 +350,7 @@ let g:rails_projections = {
 ""
 "" RSpec
 ""
-let g:rspec_command = "!rspec {spec}"
+let g:rspec_command = "!bundle exec rspec {spec}"
 let g:rspec_runner = "os_x_iterm"
 
 map <Leader>c :call RunCurrentSpecFile()<CR>
