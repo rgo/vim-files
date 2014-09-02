@@ -10,6 +10,8 @@ Vim configuration files
 * cURL
 * Exuberant ctags
 * JSHint
+* Tidy
+* scss-lint gem
 
 
 ## Installation
