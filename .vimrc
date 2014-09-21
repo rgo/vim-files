@@ -23,12 +23,12 @@ Bundle 'scrooloose/syntastic'
 
 " Specific language plugins
 Bundle 'vim-ruby/vim-ruby'
-Bundle 'pangloss/vim-javascript'
 Bundle 'othree/html5.vim'
-Bundle 'SyntaxComplete'
-Bundle 'petRUShka/vim-opencl'
+Bundle 'pangloss/vim-javascript'
 Bundle 'othree/javascript-libraries-syntax.vim'
 Bundle 'maksimr/vim-jsbeautify'
+Bundle 'petRUShka/vim-opencl'
+Bundle 'SyntaxComplete'
 
 " Testing related stuff
 Bundle 'thoughtbot/vim-rspec'
