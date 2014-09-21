@@ -410,6 +410,18 @@ autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 
 ""
+
+""
+"" SyntaxComplete
+""
+if has("autocmd") && exists("+omnifunc")
+  autocmd Filetype *
+        \ if &omnifunc == "" |
+        \ setlocal omnifunc=syntaxcomplete#Complete |
+        \ endif
+endif
+
+""
 "" Angular
 ""
 let g:angular_source_directory = 'app/scripts'
