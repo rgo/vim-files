@@ -52,6 +52,9 @@ Bundle 'tpope/vim-unimpaired'
 " Rails - i18n
 Bundle 'stefanoverna/vim-i18n'
 
+" Angular
+Bundle 'burnettk/vim-angular'
+
 " Gist from Vim
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
@@ -390,6 +393,7 @@ let g:syntastic_html_tidy_ignore_errors = [
   \ , '<alert> is not recognized!'
   \ , 'discarding unexpected <alert>'
   \ , 'discarding unexpected </alert>'
+  \ , 'proprietary attribute "spn-'
   \ ]
 
 let g:syntastic_mode_map = { 'mode': 'passive',
@@ -404,3 +408,10 @@ autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
 autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 " for css or scss
 autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+
+""
+"" Angular
+""
+let g:angular_source_directory = 'app/scripts'
+let g:angular_test_directory = 'test/spec'
+let g:angular_find_ignore = ['build/', 'dist/']
