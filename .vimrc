@@ -67,6 +67,11 @@ Bundle 'LargeFile'
 Bundle 'bling/vim-airline'
 Bundle 'kris89/vim-multiple-cursors'
 
+" Snippets
+Bundle 'SirVer/ultisnips'
+Bundle 'honza/vim-snippets'
+Bundle 'matthewsimo/angular-vim-snippets'
+
 " C
 " Bundle 'Conque-GDB'
 
@@ -427,3 +432,17 @@ endif
 let g:angular_source_directory = 'app/scripts'
 let g:angular_test_directory = 'test/spec'
 let g:angular_find_ignore = ['build/', 'dist/']
+
+
+"""
+""" UltiSnips
+"""
+" Trigger configuration. Do not use <tab> if you use
+" https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsListSnippets="<c-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-k>"
+let g:UltiSnipsJumpBackwardTrigger="<c-j>"
+
+" " If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
