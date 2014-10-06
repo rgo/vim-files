@@ -109,7 +109,7 @@ set laststatus=2    " Status line always
 "" Theme
 syntax on           " Syntax highlighting
 set t_Co=256
-colorscheme desert
+colorscheme Tomorrow-Night
 
 "" Backups, temporary files and tags
 " don't keep backup after close
