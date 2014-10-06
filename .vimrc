@@ -401,7 +401,13 @@ let g:syntastic_html_tidy_ignore_errors = [
   \ , '<alert> is not recognized!'
   \ , 'discarding unexpected <alert>'
   \ , 'discarding unexpected </alert>'
+  \ , '<ng-pluralize> is not recognized!'
   \ , 'proprietary attribute "spn-'
+  \ , 'proprietary attribute "required'
+  \ , 'proprietary attribute "novalidate'
+  \ , 'proprietary attribute "analytics'
+  \ , 'proprietary attribute "placeholder'
+  \ , 'proprietary attribute "hidden'
   \ ]
 
 let g:syntastic_mode_map = { 'mode': 'passive',
