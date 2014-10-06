@@ -151,11 +151,13 @@ set wildmode=longest:full,full
 "" Omin completion functions
 ""
 "" See :help ft-ruby-omni and :help i_CTRL-X_CTRL-O for more details.
-let g:rubycomplete_buffer_loading = 1
-let g:rubycomplete_classes_in_global = 1
-let g:rubycomplete_rails = 1
-let g:rubycomplete_load_gemfile = 1
-let g:rubycomplete_use_bundler = 1
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+autocmd FileType ruby,eruby let g:rubycomplete_load_gemfile = 1
+autocmd FileType ruby,eruby let g:rubycomplete_use_bundler = 1
+
 
 
 ""
