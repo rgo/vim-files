@@ -66,7 +66,6 @@ Bundle 'rking/ag.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'LargeFile'
 Bundle 'bling/vim-airline'
-" Bundle 'itchyny/lightline.vim'
 Bundle 'kris89/vim-multiple-cursors'
 
 " Snippets
