@@ -20,6 +20,7 @@ Bundle 'majutsushi/tagbar'
 
 " General language plugins
 Bundle 'scrooloose/syntastic'
+Bundle 'Valloric/MatchTagAlways'
 Bundle 'marijnh/tern_for_vim'
 
 " Specific language plugins
