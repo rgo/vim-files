@@ -357,6 +357,12 @@ let g:rails_projections = {
       \   "test": [
       \     "test/domain/%s_decorator_test.rb",
       \     "spec/domain/%s_decorator_spec.rb"
+      \   ]},
+      \ "app/workers/*.rb": {
+      \   "command": "worker",
+      \   "test": [
+      \     "test/workers/%s_test.rb",
+      \     "spec/workers/%s_spec.rb"
       \   ]}
       \ }
 
