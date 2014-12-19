@@ -22,6 +22,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/syntastic'
 
 " Specific language plugins
+Bundle 'editorconfig/editorconfig-vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'othree/html5.vim'
 Bundle 'pangloss/vim-javascript'
@@ -65,6 +66,7 @@ Bundle 'rking/ag.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'LargeFile'
 Bundle 'bling/vim-airline'
+" Bundle 'itchyny/lightline.vim'
 Bundle 'kris89/vim-multiple-cursors'
 
 " Snippets
