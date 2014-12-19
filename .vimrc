@@ -293,6 +293,17 @@ let g:tagbar_sort = 1
 let g:tagbar_width = 30
 " let g:tagbar_ctags_bin = '/path/to/modified-exuberant-ctags/ctags'
 
+let g:tagbar_type_ruby = {
+    \ 'kinds' : [
+        \ 'm:modules',
+        \ 'c:classes',
+        \ 'd:describes',
+        \ 'C:contexts',
+        \ 'f:methods',
+        \ 'F:singleton methods'
+    \ ]
+    \ }
+
 nnoremap <silent> <F7> :TagbarToggle<CR>
 
 
