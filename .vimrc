@@ -118,13 +118,17 @@ set t_Co=256
 colorscheme Tomorrow-Night
 
 "" Backups, temporary files and tags
-" don't keep backup after close
+" avoid swap, temp and backup files
 set nobackup
-" do keep a backup while working
-set writebackup
-" Store temporary files in a central spot
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set nowritebackup
+set noswapfile
+" don't keep backup after close
+" set nobackup
+" " do keep a backup while working
+" set writebackup
+" " Store temporary files in a central spot
+" set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+" set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 " Set tag files
 set tags=tags,./tags,tmp/tags,./tmp/tags
