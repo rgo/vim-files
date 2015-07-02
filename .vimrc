@@ -16,6 +16,7 @@ Bundle 'gmarik/vundle'
 " File explorer
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Bundle 'majutsushi/tagbar'
 
 " General language plugins
