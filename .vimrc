@@ -367,7 +367,7 @@ let g:gist_show_privates = 1
 ""
 let g:rails_projections = {
       \ "app/domain/*_contract.rb": {
-      \   "command": "domain",
+      \   "command": "contracts",
       \   "test": [
       \     "test/domain/%s_contract_test.rb",
       \     "spec/domain/%s_contract_spec.rb"
@@ -391,14 +391,47 @@ let g:rails_projections = {
       \     "test/domain/%s_decorator_test.rb",
       \     "spec/domain/%s_decorator_spec.rb"
       \   ]},
-      \ "app/workers/*.rb": {
-      \   "command": "worker",
+      \ "lib/spines/actions/*.rb": {
+      \   "command": "domainaction",
+      \   "template": "module Spines\n  module Actions\n    class %S\n    end\n  end\nend",
       \   "test": [
-      \     "test/workers/%s_test.rb",
-      \     "spec/workers/%s_spec.rb"
-      \   ]}
+      \     "spec/lib/spines/actions/%s_spec.rb"
+      \   ]},
+      \ "lib/spines/arrangements/*.rb": {
+      \   "command": "domainarrangement",
+      \   "template": "module Spines\n  module Arrangement\n    class %S\n    end\n  end\nend",
+      \   "test": [
+      \     "spec/lib/spines/arrangements/%s_spec.rb"
+      \   ]},
+      \ "lib/spines/services/*.rb": {
+      \   "command": "domainservices",
+      \   "template": "module Spines\n  module Services\n    class %S\n    end\n  end\nend",
+      \   "test": [
+      \     "spec/lib/spines/services/%s_spec.rb"
+      \   ]},
       \ }
-
+let g:rails_gem_projections = {
+      \ "sidekiq": {
+      \   "app/workers/*.rb": {
+      \   "command": "worker",
+      \   "template": "class %S\n\n  queue_as = :default\n\n  def perform\n  end\nend"
+      \   },
+      \ },
+      \ "resque": {
+      \   "app/workers/*_job.rb": {
+      \   "command": "worker",
+      \   "template": "class %SJob\n\n  \n@queue = :main\ndef self.perform\n  end\nend"
+      \   }
+      \ },
+      \ "activeadmin": {
+      \   "app/admin/*.rb": {
+      \   "command": "admin",
+      \   "affinity": "model",
+      \   "related": "app/models/%s.rb",
+      \   "template": "ActiveAdmin.register %S do\n\n  # form do\n  # end\n\n  #menu parent: '', label: ''\n\n  # index do\n  # end\n\nend\n"
+      \   }
+      \ }
+      \ }
 
 ""
 "" RSpec
