@@ -71,6 +71,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'LargeFile'
 Bundle 'bling/vim-airline'
 Bundle 'kris89/vim-multiple-cursors'
+Bundle 'stefandtw/quickfix-reflector.vim'
 
 " Snippets
 Bundle 'SirVer/ultisnips'
