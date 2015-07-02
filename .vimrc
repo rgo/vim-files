@@ -409,6 +409,12 @@ let g:rails_projections = {
       \   "test": [
       \     "spec/lib/spines/services/%s_spec.rb"
       \   ]},
+      \ "lib/infrastructure/*.rb": {
+      \   "command": "domaininfrastructure",
+      \   "template": "module Infrastructure\n  class %S\n  end\nend",
+      \   "test": [
+      \     "spec/lib/spines/services/%s_spec.rb"
+      \   ]},
       \ }
 let g:rails_gem_projections = {
       \ "sidekiq": {
