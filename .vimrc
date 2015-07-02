@@ -411,7 +411,7 @@ let g:rails_projections = {
       \   ]},
       \ "lib/infrastructure/*.rb": {
       \   "command": "domaininfrastructure",
-      \   "template": "module Infrastructure\n  class %S\n  end\nend",
+      \   "template": "module Infrastructure\n  class %S\n    def self.for(model)\n      new(model)\n    end\n\n    private\n\n    def initialize(model)\n      @model = model\n    end\n  end\nend",
       \   "test": [
       \     "spec/lib/spines/services/%s_spec.rb"
       \   ]},
