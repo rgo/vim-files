@@ -78,6 +78,10 @@ Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
 Bundle 'matthewsimo/angular-vim-snippets'
 
+" LUA
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-lua-ftplugin'
+
 " C
 " Bundle 'Conque-GDB'
 
