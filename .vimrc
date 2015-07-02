@@ -33,6 +33,7 @@ Bundle 'othree/javascript-libraries-syntax.vim'
 Bundle 'maksimr/vim-jsbeautify'
 Bundle 'petRUShka/vim-opencl'
 Bundle 'SyntaxComplete'
+Bundle 'kchmck/vim-coffee-script'
 
 " Testing related stuff
 Bundle 'thoughtbot/vim-rspec'
