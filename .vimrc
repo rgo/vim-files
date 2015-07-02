@@ -82,6 +82,9 @@ Bundle 'matthewsimo/angular-vim-snippets'
 Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-lua-ftplugin'
 
+" Theme
+Plugin 'NLKNguyen/papercolor-theme'
+
 " C
 " Bundle 'Conque-GDB'
 
@@ -121,10 +124,17 @@ set showmatch       " When a bracket is inserted, briefly jump to the matching o
 set showcmd         " Show command in the last line of the screen
 set laststatus=2    " Status line always
 
+" set diffopt+=vertical " diff vertical everywhere!
+
 "" Theme
 syntax on           " Syntax highlighting
 set t_Co=256
+" set background=dark
 colorscheme Tomorrow-Night
+highlight Normal ctermbg=black " I prefer black background
+
+" colorscheme distinguished
+" colorscheme PaperColor
 
 "" Backups, temporary files and tags
 " avoid swap, temp and backup files
